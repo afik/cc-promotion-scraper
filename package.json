@@ -1,0 +1,14 @@
+{
+  "name": "cc-promotion-scraper",
+  "version": "1.0.0",
+  "description": "credit card promotion scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khoirunnisa Afifah",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
