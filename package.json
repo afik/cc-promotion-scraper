@@ -9,6 +9,7 @@
   "author": "Khoirunnisa Afifah",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.4.6",
     "cheerio": "^0.22.0",
     "express": "^4.14.0",
     "request": "^2.75.0",
