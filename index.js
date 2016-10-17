@@ -12,13 +12,17 @@ app.get('/', function(req, res) {
 });
 
 app.get('/all', function(req, res) {
-	promotion.findAll(baseUrl).then(function(result) {
+	promotion.getAllPromo(baseUrl).then(function(result) {
 		res.setHeader('Content-Type', 'application/json');
 		res.status(200).send(JSON.stringify(result), null, 4);
+	}).catch(function(err) {
+		console.error(err);
+		var errMsg = {
+			'error' : 'Error has been encountered, check log for further info.'
+		}
+		res.status(500).send(errMsg);
 	});
 });
-
-
 
 var server = app.listen(8000, function(){
 	var port = server.address().port;
