@@ -80,3 +80,7 @@ Response will be presented as JSON data with format as follow:
 	]
 }, etc]
 ```
+
+## License
+
+[MIT license](http://opensource.org/licenses/MIT).
