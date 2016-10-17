@@ -1,6 +1,6 @@
-# Credit Card Promotion Scrapper
+# Credit Card Promotion Scraper
 
-This project 
+This project is a scraper for credit card promotion in https://m.bnizona.com/index.php/category/index/promo
 
 ## How to run
 
