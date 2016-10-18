@@ -6,7 +6,6 @@ var app = express();
 
 const baseUrl = 'https://m.bnizona.com/index.php/category/index/promo';
 
-
 app.get('/', function(req, res) {
 	res.send('send GET request on {server}:8000/all to get all promo');
 });
@@ -14,7 +13,7 @@ app.get('/', function(req, res) {
 app.get('/all', function(req, res) {
 	promotion.getAllPromo(baseUrl).then(function(result) {
 		res.setHeader('Content-Type', 'application/json');
-		res.status(200).send(JSON.stringify(result), null, 4);
+		res.status(200).send(JSON.stringify(result, null, 3));
 	}).catch(function(err) {
 		console.error(err);
 		var errMsg = {
